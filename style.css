@@ -8,7 +8,9 @@ body {
 }
 
 header {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: #1e1e1e;
     border-bottom: 1px solid #333;
@@ -16,14 +18,69 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffffff;
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: inherit;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+/* Burger-Menü */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.nav-links a {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
 }
 
 footer {
@@ -46,16 +103,5 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: none;
-}
-
-/* Link-Styling */
-a {
-    text-decoration: underline;
-    color: inherit; /* Erbt die Farbe vom Text */
-    cursor: pointer;
-}
-
-a:hover {
     text-decoration: none;
 }
