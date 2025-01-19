@@ -1,80 +1,66 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <!-- Grundlegende Meta-Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Willkommen bei Novarix Studio, Ihrer Plattform für kreative Lösungen in Roleplay und Spieleentwicklung.">
-    <meta name="keywords" content="Novarix Studio, Spieleentwicklung, Roleplay, Webentwicklung, Kreative Lösungen">
-    <meta name="author" content="Novarix Studio">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#000000">
-    
-    <!-- Social Media Meta-Tags -->
-    <meta property="og:title" content="Novarix Studio - Kreative Lösungen für Games und Roleplay">
-    <meta property="og:description" content="Entdecken Sie innovative Lösungen für Roleplay und Spieleentwicklung.">
-    <meta property="og:image" content="https://example.com/images/novarix-logo.png">
-    <meta property="og:url" content="https://novarix-studio.de">
+    <meta name="description" content="Willkommen bei Novarix Studio. Ein Hobby-Projekt mit Discord-Bots und kreativen Lösungen.">
+    <meta name="keywords" content="Novarix Studio, Discord Bots, Hobby-Projekt, Startseite">
+    <meta name="author" content="Lenny Spengler">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Startseite | Novarix Studio">
+    <meta property="og:description" content="Willkommen bei Novarix Studio. Ein Hobby-Projekt mit Discord-Bots und kreativen Lösungen.">
+    <meta property="og:image" content="https://novarix-studio.de/images/social-preview.png">
+    <meta property="og:url" content="https://novarix-studio.de/index.html">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="de_DE">
 
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Novarix Studio - Kreative Lösungen für Games und Roleplay">
-    <meta name="twitter:description" content="Entdecken Sie innovative Lösungen für Roleplay und Spieleentwicklung.">
-    <meta name="twitter:image" content="https://example.com/images/novarix-logo.png">
+    <meta name="twitter:title" content="Startseite | Novarix Studio">
+    <meta name="twitter:description" content="Willkommen bei Novarix Studio. Ein Hobby-Projekt mit Discord-Bots und kreativen Lösungen.">
+    <meta name="twitter:image" content="https://novarix-studio.de/images/social-preview.png">
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://novarix-studio.de">
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
 
-    <!-- Stylesheet -->
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- CSS und JavaScript -->
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
-    <title>Novarix Studio</title>
+    <title>Startseite | Novarix Studio</title>
 </head>
 <body>
     <header>
-        <!-- Burger-Menü -->
-        <div class="burger-menu">
+        <h1>Novarix Studio</h1>
+        <div class="burger" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <!-- Navigation -->
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ueber-uns.html">Über Uns</a></li>
-                <li><a href="projekte.html">Projekte</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+        <nav class="nav-links">
+            <a href="index.html">Startseite</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutzerklärung</a>
+            <a href="agb.html">AGB</a>
+            <a href="kontakt.html">Kontakt</a>
         </nav>
-        <h1>Novarix Studio</h1>
     </header>
     <main>
-        <section>
-            <h2>Willkommen bei Novarix Studio</h2>
-            <p>Wir bieten kreative Lösungen für Roleplay- und Spieleentwicklung.</p>
-        </section>
+        <h2>Willkommen bei Novarix Studio</h2>
+        <p>Dies ist ein reines Hobby-Projekt, das verschiedene Dienste und Bots für Discord-Server bereitstellt.</p>
     </main>
     <footer>
         <p>&copy; 2025 Novarix Studio. Alle Rechte vorbehalten.</p>
-        <div class="footer-links">
-            <a href="datenschutz.html">Datenschutz</a>
-            <a href="impressum.html">Impressum</a>
-            <a href="agb.html">AGB</a>
+        <nav>
+            <a href="impressum.html">Impressum</a> | 
+            <a href="datenschutz.html">Datenschutzerklärung</a> | 
+            <a href="agb.html">AGB</a> | 
             <a href="kontakt.html">Kontakt</a>
-        </div>
+        </nav>
     </footer>
-
-    <!-- JavaScript -->
-    <script>
-        const burgerMenu = document.querySelector('.burger-menu');
-        const navMenu = document.querySelector('.nav-menu');
-
-        burgerMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>
