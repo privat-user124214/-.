@@ -122,7 +122,6 @@ footer p {
 
 /* Responsive Design */
 @media (min-width: 768px) {
-    /* Desktop-Ansicht */
     .nav-menu ul {
         flex-direction: row;
     }
@@ -141,7 +140,6 @@ footer p {
 }
 
 @media (max-width: 767px) {
-    /* Mobile-Ansicht */
     .nav-menu ul {
         flex-direction: column;
     }
