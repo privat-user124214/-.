@@ -113,6 +113,12 @@ footer nav a:hover {
     margin-top: 10px;
 }
 
+/* Links bündige Inhalte */
+.left-align {
+    text-align: left;
+    margin: 10px 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
