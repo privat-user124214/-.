@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #f0f0f0;
+    line-height: 1.6;
 }
 
 h1, h2, h3, p, a {
@@ -26,10 +27,23 @@ header {
 header h1 {
     margin: 0;
     font-size: 1.5em;
+    color: #ffffff;
 }
 
 .nav-links {
     display: none;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
 }
 
 .burger {
@@ -60,103 +74,15 @@ footer nav {
 
 footer nav a {
     color: #f0f0f0;
-    text-decoration: underline;
+    text-decoration: none;
     margin: 0 10px;
     font-size: 0.9em;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 
-/* Main Content Styling */
-main {
-    padding: 1.5em;
-}
-
-.left-align {
-    text-align: left;
-}
-
-/* Navigation für große Bildschirme */
-@media screen and (min-width: 768px) {
-    .nav-links {
-        display: flex;
-        gap: 15px;
-    }
-
-    .burger {
-        display: none;
-    }
-}
-
-/* Burger-Menü */
-.show {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}/* Allgemeines Styling */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #f0f0f0;
-}
-
-h1, h2, h3, p, a {
-    margin: 0;
-    padding: 0;
-}
-
-/* Header Styling */
-header {
-    background-color: #1f1f1f;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.nav-links {
-    display: none;
-}
-
-.burger {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.burger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #1f1f1f;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-}
-
-footer nav {
-    margin-top: 1em;
-}
-
-footer nav a {
-    color: #f0f0f0;
+footer nav a:hover {
+    color: #00bcd4;
     text-decoration: underline;
-    margin: 0 10px;
-    font-size: 0.9em;
 }
 
 /* Main Content Styling */
