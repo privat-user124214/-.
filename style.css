@@ -18,6 +18,11 @@ p, ul {
     text-align: justify;
 }
 
+.left-align {
+    text-align: left;
+    margin: 10px 20px;
+}
+
 /* Header */
 header {
     background: #222;
@@ -69,12 +74,6 @@ header h1 {
     background: #fff;
 }
 
-/* Main */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
 /* Footer */
 footer {
     background: #222;
@@ -105,18 +104,6 @@ footer nav a {
 footer nav a:hover {
     color: #fff;
     border-color: #00aaff;
-}
-
-/* Zentrierung von Absätzen und Listen */
-.contact-info {
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* Links bündige Inhalte */
-.left-align {
-    text-align: left;
-    margin: 10px 20px;
 }
 
 /* Responsive Design */
