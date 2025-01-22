@@ -18,12 +18,110 @@ p, ul {
     text-align: justify;
 }
 
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #444;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    border-color: #00aaff;
+}
+
+/* Burger Menü */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 2px solid #444;
+}
+
 footer nav {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
+footer nav a {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
 footer nav a:hover {
     color: #fff;
+    border-color: #00aaff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #222;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        border-left: 2px solid #444;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
 }
