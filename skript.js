@@ -1,4 +1,7 @@
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
+// Burger Menü für die Navigation
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-}
+});
