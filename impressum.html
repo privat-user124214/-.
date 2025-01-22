@@ -3,54 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Impressum von Novarix Studio.">
+    <meta name="description" content="Impressum von Novarix Studio - Alle rechtlichen Informationen.">
+    <meta name="keywords" content="Impressum, Novarix Studio, rechtliche Informationen">
+    <meta name="author" content="Lenny Spengler">
+    <title>Impressum - Novarix Studio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Impressum | Novarix Studio</title>
 </head>
 <body>
     <header>
         <h1>Novarix Studio</h1>
-        <div class="burger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="nav-links">
-            <a href="index.html">Startseite</a>
-            <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutzerklärung</a>
-            <a href="agb.html">AGB</a>
-            <a href="kontakt.html">Kontakt</a>
+        <nav>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="agb.html">AGB</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="left-align">
-            <h2>Impressum</h2>
-            <p><strong>Betreiber:</strong><br>
+        <h2>Impressum</h2>
+        <p>
+            Betreiber:<br>
             Lenny Spengler<br>
             Freibergerstraße 3<br>
-            09569 Oederan, Deutschland</p>
-            <h3>Kontakt:</h3>
-            <p>E-Mail: kontakt@novarix-studio.de<br>
-            WhatsApp: <a href="https://wa.me/message/ASYVNMSF2VGZP1">Kontakt via WhatsApp</a><br>
-            Discord: <a href="discord.novarix-studio.de">discord.novarix-studio.de</a></p>
-            <h3>Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV:</h3>
-            <p>Lenny Spengler<br>
-            Freibergerstraße 3<br>
-            09569 Oederan, Deutschland</p>
-            <h3>Hinweis zur Streitbeilegung:</h3>
-            <p>Wir nehmen nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil.</p>
-        </div>
+            09569 Oederan, Deutschland<br>
+        </p>
+        <p>
+            Kontakt:<br>
+            E-Mail: kontakt@novarix-studio.de<br>
+            WhatsApp: <a href="https://wa.me/message/ASYVNMSF2VGZP1" target="_blank">WhatsApp</a><br>
+            Discord-Server: <a href="https://discord.novarix-studio.de" target="_blank">discord.novarix-studio.de</a>
+        </p>
+        <p>
+            Hinweis zur Streitbeilegung:<br>
+            Wir nehmen nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil.
+        </p>
     </main>
     <footer>
         <p>&copy; 2025 Novarix Studio. Alle Rechte vorbehalten.</p>
         <nav>
+            <a href="datenschutz.html">Datenschutz</a>
             <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutzerklärung</a>
             <a href="agb.html">AGB</a>
             <a href="kontakt.html">Kontakt</a>
         </nav>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
