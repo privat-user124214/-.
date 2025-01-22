@@ -45,14 +45,14 @@ header h1 {
 }
 
 .nav-links li a {
-    color: #fff;
+    color: #aaa;
     text-decoration: none;
-    padding: 5px;
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s ease;
 }
 
 .nav-links li a:hover {
+    color: #fff;
     border-color: #00aaff;
 }
 
