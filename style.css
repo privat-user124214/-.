@@ -41,13 +41,16 @@ header .nav-links a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 header .nav-links a:hover {
     background-color: #575757;
-    color: #fff;
     border-radius: 5px;
+}
+
+header .burger {
+    display: none; /* Falls später für Responsive-Design benötigt */
 }
 
 /* Hauptinhalt */
@@ -112,12 +115,11 @@ footer nav a {
     text-decoration: none;
     margin: 0 10px;
     font-size: 0.9rem;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 footer nav a:hover {
     color: #aaa;
-    text-decoration: underline;
 }
 
 /* Footer-Link-Klasse */
@@ -131,16 +133,6 @@ footer nav a:hover {
 .footer-link:hover {
     color: #003366;
     border-color: #003366;
-}
-
-/* Globaler Hover-Effekt für alle Links */
-a {
-    transition: color 0.3s ease, border-color 0.3s ease, text-decoration 0.3s ease;
-}
-
-a:hover {
-    color: #003366; /* Dunklerer Blau-Ton */
-    text-decoration: underline; /* Einheitlicher Hover-Effekt */
 }
 
 /* Responsive Design */
