@@ -94,3 +94,58 @@ footer nav a:hover {
         display: flex;
     }
 }
+/* Burger Menü */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    border-color: #00aaff;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #222;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        border-left: 2px solid #444;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
