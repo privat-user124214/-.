@@ -1,4 +1,4 @@
-/* Allgemeine Einstellungen */
+1/* Allgemeine Einstellungen */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -137,3 +137,14 @@ footer nav a:hover {
         display: flex;
     }
 }
+
+/* Globale Stile für Überschriften */
+h3 {
+    margin-top: 20px;
+    text-align: left; /* Sicherstellen, dass alle h3 linksbündig sind */
+}
+
+/* Spezifisch für Datenschutzerklärung */
+.left-align {
+    text-align: left; /* Zusätzliche Klasse für gezielte Steuerung */
+} 
