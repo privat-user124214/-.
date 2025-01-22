@@ -5,7 +5,6 @@ body {
     color: #fff;
     background-color: #000;
     line-height: 1.6;
-    text-align: left; /* Kein Blocksatz */
 }
 
 h1, h2 {
@@ -17,8 +16,8 @@ h1, h2 {
 p {
     margin: 10px 20px;
     line-height: 1.8;
-    text-align: left; /* Kein Blocksatz */
-    word-wrap: break-word; /* Lange Wörter umbrechen */
+    text-align: left;
+    word-wrap: break-word;
 }
 
 /* Links */
@@ -61,39 +60,6 @@ footer nav a:hover {
     border-color: #00aaff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    p {
-        font-size: 14px; /* Kleinere Schriftgröße auf mobilen Geräten */
-        margin: 10px; /* Weniger Seitenabstand */
-        line-height: 1.6; /* Angepasste Zeilenhöhe */
-    }
-
-    h1, h2 {
-        font-size: 20px; /* Überschriften anpassen */
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        background: #222;
-        padding: 20px;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        border-left: 2px solid #444;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .burger {
-        display: flex;
-    }
-}
 /* Burger Menü */
 .burger {
     display: none;
@@ -110,6 +76,7 @@ footer nav a:hover {
     transition: 0.3s;
 }
 
+/* Navigation Links */
 .nav-links {
     display: flex;
     gap: 20px;
@@ -127,7 +94,18 @@ footer nav a:hover {
     border-color: #00aaff;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+    p {
+        font-size: 14px;
+        margin: 10px;
+        line-height: 1.6;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
     .burger {
         display: flex;
     }
