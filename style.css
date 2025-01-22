@@ -14,9 +14,11 @@ h1, h2 {
 }
 
 p {
-    margin: 20px;
-    text-align: justify;
+    margin: 10px 20px;
+    text-align: left; /* Statt justify */
+    line-height: 1.8; /* Leicht erhöhter Zeilenabstand für bessere Lesbarkeit */
 }
+
 
 /* Header */
 header {
