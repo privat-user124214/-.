@@ -51,7 +51,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Hero Section (für AGB) */
+/* Hero Section (für Datenschutz) */
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -59,20 +59,20 @@ nav ul li a:hover {
     color: white;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.agb-content {
-    text-align: center; /* Text zentrieren */
+.datenschutz-content {
+    text-align: left; /* Text wird linksbündig innerhalb des Containers angezeigt */
     max-width: 800px; /* Maximale Breite des Textbereichs */
     margin: 0 auto; /* Zentrieren des Textbereichs */
     font-size: 18px;
     line-height: 1.6;
 }
 
-.agb-content p {
+.datenschutz-content p {
     margin-bottom: 20px;
 }
 
@@ -109,7 +109,7 @@ footer {
         margin: 10px 0;
     }
 
-    .hero h1 {
+    .hero h2 {
         font-size: 28px;
     }
 
