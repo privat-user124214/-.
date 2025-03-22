@@ -10,16 +10,16 @@ body {
     background-color: #121212;
     color: white;
     display: flex;
-    justify-content: flex-start; /* Damit der Inhalt oben ist */
-    align-items: flex-start; /* Sicherstellen, dass der Inhalt oben bleibt */
+    flex-direction: column;  /* Inhalte vertikal anordnen */
     min-height: 100vh;
-    flex-direction: column;
+    justify-content: flex-start; /* Der Inhalt startet oben */
+    align-items: center; /* Zentriert den Inhalt horizontal */
 }
 
 /* Header */
 header {
-    position: sticky; /* Macht den Header sticky */
-    top: 0;
+    position: sticky;
+    top: 0; /* Fixiert den Header oben */
     left: 0;
     width: 100%;
     display: flex;
@@ -27,7 +27,7 @@ header {
     align-items: center;
     padding: 15px 20px;
     background-color: #1a1a1a;
-    z-index: 1000; /* Der Header bleibt oben */
+    z-index: 1000; /* Header bleibt oben, wenn man scrollt */
 }
 
 header h1 {
@@ -62,6 +62,7 @@ main {
     text-align: center;
     max-width: 800px;
     width: 100%;
+    margin-top: 50px;  /* Platz für den Header */
 }
 
 /* Hero Section */
