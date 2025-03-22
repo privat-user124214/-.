@@ -9,6 +9,10 @@
 body {
     background-color: #121212;
     color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Footer bleibt unten */
 }
 
 /* Header */
@@ -47,24 +51,29 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Hero Section */
+/* Hero Section (für AGB) */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: white;
 }
 
 .hero h1 {
     font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 18px;
-    margin: 10px 0;
+    line-height: 1.6;
+    margin: 15px 0;
+    text-align: left;
 }
 
-.btn {
+.hero .btn {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 30px;
     padding: 12px 24px;
     color: white;
     background-color: #a64eff;
@@ -73,7 +82,7 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-.btn:hover {
+.hero .btn:hover {
     background-color: #822ed6;
 }
 
@@ -82,7 +91,6 @@ footer {
     text-align: center;
     padding: 15px;
     background-color: #1a1a1a;
-    margin-top: 20px;
 }
 
 /* Responsive Design */
@@ -102,5 +110,9 @@ footer {
 
     .hero p {
         font-size: 16px;
+    }
+
+    .hero .btn {
+        padding: 10px 20px;
     }
 }
