@@ -10,11 +10,10 @@ body {
     background-color: #121212;
     color: white;
     display: flex;
-    flex-direction: column;  /* Inhalte vertikal anordnen */
+    flex-direction: column; /* Inhalte vertikal anordnen */
     min-height: 100vh;
     justify-content: flex-start; /* Der Inhalt startet oben */
     align-items: center; /* Zentriert den Inhalt horizontal */
-    padding-top: 80px; /* Platz für den Header */
 }
 
 /* Header */
@@ -63,144 +62,7 @@ main {
     text-align: center;
     max-width: 800px;
     width: 100%;
-    margin-top: 100px;  /* Mehr Platz für den fixierten Header */
-}
-
-/* Hero Section */
-.hero {
-    margin-top: 50px;
-}
-
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Kontakt und Impressum Inhalte */
-.kontakt-content, .impressum-content {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    text-align: left;
-    font-size: 16px;
-}
-
-.kontakt-content a, .impressum-content a {
-    color: #a64eff;
-    text-decoration: none;
-}
-
-.kontakt-content a:hover, .impressum-content a:hover {
-    color: #822ed6;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1a1a1a;
-    width: 100%;
-    margin-top: 20px;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        justify-content: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .kontakt-content, .impressum-content {
-        font-size: 14px;
-    }
-}
-/* Allgemeines Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #121212;
-    color: white;
-    display: flex;
-    flex-direction: column;  /* Inhalte vertikal anordnen */
-    min-height: 100vh;
-    justify-content: flex-start; /* Der Inhalt startet oben */
-    align-items: center; /* Zentriert den Inhalt horizontal */
-}
-
-/* Header */
-header {
-    position: sticky;
-    top: 0; /* Fixiert den Header oben */
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #1a1a1a;
-    z-index: 1000; /* Header bleibt oben, wenn man scrollt */
-}
-
-header h1 {
-    font-size: 24px;
-    color: #a64eff;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 12px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #a64eff;
-    border-radius: 5px;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
-    margin-top: 50px;  /* Platz für den Header */
+    margin-top: 100px;  /* Platz für den fixierten Header */
 }
 
 /* Hero Section */
