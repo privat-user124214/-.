@@ -10,11 +10,10 @@ body {
     background-color: #121212;
     color: white;
     display: flex;
-    justify-content: flex-start; /* Header oben fixieren */
-    align-items: center; /* Inhalt mittig ausrichten */
+    justify-content: center;
+    align-items: flex-start; /* Header oben */
     min-height: 100vh;
     flex-direction: column;
-    margin: 0;
 }
 
 /* Header */
@@ -25,10 +24,6 @@ header {
     padding: 15px 20px;
     background-color: #1a1a1a;
     width: 100%;
-    position: fixed;  /* Header oben fixieren */
-    top: 0;  /* Positionierung ganz oben */
-    left: 0;
-    z-index: 10; /* Header immer im Vordergrund */
 }
 
 header h1 {
@@ -63,10 +58,8 @@ main {
     text-align: center;
     max-width: 800px;
     width: 100%;
-    margin-top: 80px; /* Platz für den fixierten Header */
 }
 
-/* Hero Section */
 .hero {
     margin-top: 50px;
 }
@@ -81,8 +74,8 @@ main {
     line-height: 1.6;
 }
 
-/* Datenschutz, AGB, Impressum Inhalte */
-.datenschutz-content, .agb-content, .impressum-content, .startseite-content {
+/* Kontakt und Impressum Inhalte */
+.kontakt-content {
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 8px;
@@ -91,12 +84,12 @@ main {
     font-size: 16px;
 }
 
-.datenschutz-content a, .agb-content a, .impressum-content a, .startseite-content a {
+.kontakt-content a {
     color: #a64eff;
     text-decoration: none;
 }
 
-.datenschutz-content a:hover, .agb-content a:hover, .impressum-content a:hover, .startseite-content a:hover {
+.kontakt-content a:hover {
     color: #822ed6;
 }
 
@@ -132,7 +125,7 @@ footer p {
         font-size: 28px;
     }
 
-    .datenschutz-content, .agb-content, .impressum-content, .startseite-content {
+    .kontakt-content {
         font-size: 14px;
     }
 }
