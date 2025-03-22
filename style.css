@@ -59,51 +59,6 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Hamburger Menu (nur sichtbar auf mobilen Geräten) */
-.burger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.burger span {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-/* Aktivieren des Burger-Menüs bei kleinen Bildschirmen */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #1a1a1a;
-        text-align: center;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 15px 0;
-    }
-
-    nav ul li a {
-        padding: 15px;
-    }
-}
-
 /* Main Content */
 main {
     padding: 20px;
