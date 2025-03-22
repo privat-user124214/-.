@@ -10,20 +10,24 @@ body {
     background-color: #121212;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Damit der Inhalt oben ist */
+    align-items: flex-start; /* Sicherstellen, dass der Inhalt oben bleibt */
     min-height: 100vh;
     flex-direction: column;
 }
 
 /* Header */
 header {
+    position: sticky; /* Macht den Header sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
     background-color: #1a1a1a;
-    width: 100%;
+    z-index: 1000; /* Der Header bleibt oben */
 }
 
 header h1 {
@@ -60,6 +64,7 @@ main {
     width: 100%;
 }
 
+/* Hero Section */
 .hero {
     margin-top: 50px;
 }
