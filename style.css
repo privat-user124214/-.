@@ -64,11 +64,16 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.hero p {
+.agb-content {
+    text-align: center; /* Text zentrieren */
+    max-width: 800px; /* Maximale Breite des Textbereichs */
+    margin: 0 auto; /* Zentrieren des Textbereichs */
     font-size: 18px;
     line-height: 1.6;
-    margin: 15px 0;
-    text-align: left;
+}
+
+.agb-content p {
+    margin-bottom: 20px;
 }
 
 .hero .btn {
