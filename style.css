@@ -24,16 +24,23 @@ header {
     padding: 15px 20px;
     background-color: #1a1a1a;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 header h1 {
     font-size: 24px;
     color: #a64eff;
+    margin-left: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 nav ul li {
@@ -50,6 +57,51 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #a64eff;
     border-radius: 5px;
+}
+
+/* Hamburger Menu (nur sichtbar auf mobilen Geräten) */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Aktivieren des Burger-Menüs bei kleinen Bildschirmen */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        padding: 15px;
+    }
 }
 
 /* Main Content */
