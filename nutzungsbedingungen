@@ -15,7 +15,7 @@
         <h1>Novarix Studio</h1>
         <nav>
             <ul class="nav-links">
-                <li><a href="">Startseite</a></li>
+                <li><a href="/">Startseite</a></li>
                 <li><a href="datenschutz">Datenschutz</a></li>
                 <li><a href="impressum">Impressum</a></li>
                 <li><a href="agb">AGB</a></li>
@@ -71,5 +71,6 @@
         <p>&copy; 2025 Novarix Studio. Alle Rechte vorbehalten.</p>
         <p>Powered by Novarix</p>
     </footer>
+
 </body>
 </html>
